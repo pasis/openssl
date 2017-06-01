@@ -353,6 +353,9 @@ int (*EVP_CIPHER_meth_get_ctrl(const EVP_CIPHER *cipher))(EVP_CIPHER_CTX *,
 
 # define         EVP_CTRL_GET_IVLEN                      0x25
 
+/* Get the IV used by the cipher */
+# define         EVP_CTRL_GET_IV                         0x26
+
 /* Padding modes */
 #define EVP_PADDING_PKCS7       1
 #define EVP_PADDING_ISO7816_4   2
